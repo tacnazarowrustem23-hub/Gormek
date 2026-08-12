@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotoğraf ve Video Uygulamam</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Medya Uygulamam</h1>
+
+    <div id="loginBox">
+      <input type="email" id="emailInput" placeholder="E-posta">
+      <input type="password" id="passwordInput" placeholder="Şifre">
+      <button id="loginBtn" class="button">Giriş Yap</button>
+    </div>
+
+    <div id="adminBox" style="display:none;">
+      <p>✅ Giriş yaptınız</p>
+      <button id="logoutBtn" class="button">Çıkış Yap</button>
+      <label class="button">
+        📷 Fotoğraf Yükle
+        <input type="file" id="photoInput" accept="image/*" hidden>
+      </label>
+    </div>
+
+    <div id="gallery"></div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
